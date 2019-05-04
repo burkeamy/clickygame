@@ -1,0 +1,62 @@
+[
+{
+    "id": 1,
+    "name": "Pikachu",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/25.png"
+},
+{
+    "id": 2,
+    "name": "Greninja",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/658.png"
+},
+{
+    "id": 3,
+    "name": "Venomoth",
+    "image":"https://pokeres.bastionbot.org/images/pokemon/49.png"
+},
+{
+    "id": 4,
+    "name": "Rapidash",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/78.png"
+},
+{
+    "id": 5,
+    "name": "Jynx",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/124.png"
+},
+{
+    "id": 6,
+    "name": "Gyardos",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/130.png"
+},
+{
+    "id": 7,
+    "name": "Entei",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/244.png"
+},
+{
+    "id": 8,
+    "name": "Lugia",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/249.png"
+}, 
+{
+    "id": 9,
+    "name": "Girafarig",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/203.png"
+},
+{ 
+    "id": 10,
+    "name": "Snoralax",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/143.png"
+},
+{
+    "id": 11,
+    "name": "Charmander",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/004.png"
+},
+{
+    "id": 12,
+    "name": "Beedrill",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/015.png"
+}
+]

@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import ScoreBar from './components/ScoreBar';
+import Header from './components/Header';
+import PokemonCard from './components/PokemonCard';
+import pokedex from './pokedex.json';
+import PokeBall from './components/PokeBall';
 
-function App() {
+class App extends Component() {
+  //setting state for pokemon
+  state = {
+    pokemon
+  };
+
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PokeBall>
+      <ScoreBar />
+      <Header />
+
+       {this.state.pokemon.map(pokemon =>(      
+      <PokemonCard 
+        key = {pokedex.id}
+        name = {pokedex.name}
+        imge = {pokedex.image}
+      />
+      ))}
+    </PokeBall>
   );
+}
 }
 
 export default App;
