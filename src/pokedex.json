@@ -2,61 +2,73 @@
 {
     "id": 1,
     "name": "Pikachu",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/25.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/25.png",
+    "status": "wild"
 },
 {
     "id": 2,
     "name": "Greninja",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/658.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/658.png",
+    "status": "wild"
 },
 {
     "id": 3,
     "name": "Venomoth",
-    "image":"https://pokeres.bastionbot.org/images/pokemon/49.png"
+    "image":"https://pokeres.bastionbot.org/images/pokemon/49.png",
+    "status": "wild"
 },
 {
     "id": 4,
     "name": "Rapidash",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/78.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/78.png",
+    "status": "wild"
 },
 {
     "id": 5,
     "name": "Jynx",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/124.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/124.png",
+    "status": "wild"
 },
 {
     "id": 6,
     "name": "Gyardos",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/130.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/130.png",
+    "status": "wild"
 },
 {
     "id": 7,
     "name": "Entei",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/244.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/244.png",
+    "status": "wild"
 },
 {
     "id": 8,
     "name": "Lugia",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/249.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/249.png",
+    "status": "wild"
 }, 
 {
     "id": 9,
     "name": "Girafarig",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/203.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/203.png",
+    "status": "wild"
 },
 { 
     "id": 10,
     "name": "Snoralax",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/143.png"
+    "image": "https://pokeres.bastionbot.org/images/pokemon/143.png",
+    "status": "wild"
 },
 {
     "id": 11,
-    "name": "Charmander",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/004.png"
+    "name": "Vileplume",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/045.png",
+    "status": "wild"
 },
 {
     "id": 12,
-    "name": "Beedrill",
-    "image": "https://pokeres.bastionbot.org/images/pokemon/015.png"
+    "name": "Togekiss",
+    "image": "https://pokeres.bastionbot.org/images/pokemon/468.png",
+    "status": "wild"
 }
 ]

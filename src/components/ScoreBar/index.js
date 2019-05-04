@@ -5,7 +5,7 @@ function ScoreBar(props) {
 
     return (     
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <h1>Pokemon Clicky Game</h1>
+            <h1>PokeClick</h1>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <h3>| Score {props.childern} |</h3>
