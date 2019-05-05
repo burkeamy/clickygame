@@ -1,18 +1,22 @@
-import React from "react";
+import React from 'react';
+import Row from '../Row';
+import Col from '../Col';
 //import "./stle.css";
 
 function ScoreBar(props) {
 
     return (     
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <h1>PokeClick</h1>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <h3 onClick={() => props.changeStatus(props.children)}>| Score {props.children} |</h3>
-                    <h3>High Score {props.children} </h3>
-                </div>
-            </div>
-        </nav>
+        < Row>
+            <Col size = "md-5">
+                <h1>PokeClick</h1>
+            </Col>
+            <Col size = "md-2">  
+                <h3>| Score {props.score} </h3>
+            </Col>
+            <Col size = "md-4">
+                <h3>| High Score {props.children} </h3>
+            </Col>
+        </Row>
     )
 }
 

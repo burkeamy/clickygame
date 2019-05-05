@@ -12,24 +12,31 @@ class App extends Component {
   //setting state for pokemon
   state = {
     pokemon,
+    selected: pokemon.id,
     status: "wild",
-    score: 0
+    score: 0,
+    highScore: 0
   };
 
-  changeStatus = (status) => {
-    
+  changeStatus = (id) => {
+    const caught = this.state.pokemon.filter(pokemon => pokemon.id === id);
+
+    //const caught =  this.state.selected;
     this.setState({
-         score: this.state.score + 1,
-         status: "caught"
+        score: this.state.score + 1,
+        selected: this.state.selected + id,
       });
-    console.log(this.state.status)
+    console.log(id, caught)
   }
+
 
   render() {
   return (
     <PokeBall>
+      <Container>
       <ScoreBar 
-        score = {this.changeStatus.score}/>
+        score = {this.state.score}/>
+      </Container>
       <Header />
 
       <Container >
@@ -40,6 +47,7 @@ class App extends Component {
             key = {pokemon.id}
             name = {pokemon.name}
             image = {pokemon.image}
+            selected = {pokemon.id}
             changeStatus = {this.changeStatus}
             />
           ))}
