@@ -16,18 +16,20 @@ class App extends Component {
     score: 0
   };
 
-  changeScore = () => {
-    const caught = this.state.pokemon.status
+  changeStatus = (status) => {
+    
     this.setState({
-         score: this.state.score + 1
+         score: this.state.score + 1,
+         status: "caught"
       });
-    console.log(this.state.score, caught)
+    console.log(this.state.status)
   }
 
   render() {
   return (
     <PokeBall>
-      <ScoreBar />
+      <ScoreBar 
+        score = {this.changeStatus.score}/>
       <Header />
 
       <Container >
@@ -38,10 +40,9 @@ class App extends Component {
             key = {pokemon.id}
             name = {pokemon.name}
             image = {pokemon.image}
-            status = {pokemon.status}
-            onClick={this.changeScore}
-          />
-         ))}
+            changeStatus = {this.changeStatus}
+            />
+          ))}
         </Row>
       </Container>
     </PokeBall>

@@ -3,14 +3,20 @@ import "./style.css"
 import Col from "../Col";
 
 function PokemonCard(props) {
-    return (
+
+   return (
       <Col size = "md-4">
+      
         <div className = "card">
                 <div className ="img-container" alt="Responsive image">
-                    <img alt = {props.name} src = {props.image}
-                    onClick={() => props.changeScore(props.status)} className="score"/>
+                <span onClick={() => props.changeStatus(props.id)}>
+                    <img alt = {props.name} src = {props.image} />
+                    
+                        
+                    </span>
                 </div>
             </div>
+     
        </Col>
     );
 }
