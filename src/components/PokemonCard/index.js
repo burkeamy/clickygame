@@ -9,7 +9,8 @@ function PokemonCard(props) {
       
         <div className = "card">
                 <div className ="img-container" alt="Responsive image">
-                <span onClick={() => props.changeStatus(props.id)}>
+                <span onClick={() => props.changeStatus(props.id)
+                }>
                     <img alt = {props.name} src = {props.image} />
                     
                         

@@ -8,6 +8,7 @@ import PokeBall from './components/PokeBall';
 import Container from './components/Container';
 import Row from './components/Row';
 
+let myPokedex= [];
 class App extends Component {
   //setting state for pokemon
   state = {
@@ -15,20 +16,35 @@ class App extends Component {
     selected: pokemon.id,
     status: "wild",
     score: 0,
-    highScore: 0
+    highScore: 0,
   };
 
-  changeStatus = (id) => {
+  changeStatus = (id) =>{
+    //capturing the id of the selected pokemon
     const caught = this.state.pokemon.filter(pokemon => pokemon.id === id);
-
-    //const caught =  this.state.selected;
+    
+    //setting state for react
     this.setState({
         score: this.state.score + 1,
         selected: this.state.selected + id,
       });
-    console.log(id, caught)
-  }
 
+      //pushing caught pokemon to an array
+      myPokedex.push(id);
+      console.log(caught);
+    //trying to check array for duplicates 
+    /*function checkPokedex (id) {
+      for (let i = 0; i <myPokedex.length; i+1) {
+        if (id === i) {
+          myPokedex = [];
+          this.setState ({
+            score: 0
+          })
+        } 
+      }
+      }
+    myPokedex.forEach(checkPokedex)*/
+};
 
   render() {
   return (
@@ -49,12 +65,13 @@ class App extends Component {
             image = {pokemon.image}
             selected = {pokemon.id}
             changeStatus = {this.changeStatus}
+        
             />
           ))}
         </Row>
       </Container>
     </PokeBall>
-
+  
   );
 }
 }
