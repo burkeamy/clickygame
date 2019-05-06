@@ -1,5 +1,6 @@
 import React from "react";
 
+//game instructions
 function Header() {
     return (
         <div className = "instructions">

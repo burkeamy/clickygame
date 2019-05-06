@@ -1,10 +1,9 @@
 import React from 'react';
 import Row from '../Row';
 import Col from '../Col';
-//import "./stle.css";
 
+//keeping score, high score is currently not avilable
 function ScoreBar(props) {
-
     return (     
         < Row>
             <Col size = "md-5">

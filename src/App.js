@@ -8,13 +8,14 @@ import PokeBall from './components/PokeBall';
 import Container from './components/Container';
 import Row from './components/Row';
 
+//you store your pokemon in a pokedex, to keep track of what you have caught
 let myPokedex= [];
+
 class App extends Component {
   //setting state for pokemon
   state = {
     pokemon,
     selected: pokemon.id,
-    status: "wild",
     score: 0,
     highScore: 0,
   };
@@ -31,8 +32,11 @@ class App extends Component {
 
       //pushing caught pokemon to an array
       myPokedex.push(id);
+
+      //because react wanted all variables to be used
       console.log(caught);
-    //trying to check array for duplicates 
+
+    //trying to check array for duplicates, but it breaks the app.
     /*function checkPokedex (id) {
       for (let i = 0; i <myPokedex.length; i+1) {
         if (id === i) {
@@ -42,6 +46,10 @@ class App extends Component {
           })
         } 
       }
+      } if (score >= highScore) {
+        this.setState({
+          highScore: score
+        })
       }
     myPokedex.forEach(checkPokedex)*/
 };
@@ -54,26 +62,23 @@ class App extends Component {
         score = {this.state.score}/>
       </Container>
       <Header />
-
       <Container >
         <Row>
           {this.state.pokemon.map(pokemon =>(      
-          <PokemonCard 
-            id = {pokemon.id}
-            key = {pokemon.id}
-            name = {pokemon.name}
-            image = {pokemon.image}
-            selected = {pokemon.id}
-            changeStatus = {this.changeStatus}
-        
+            <PokemonCard 
+              id = {pokemon.id}
+              key = {pokemon.id}
+              name = {pokemon.name}
+              image = {pokemon.image}
+              selected = {pokemon.id}
+              changeStatus = {this.changeStatus}
             />
           ))}
         </Row>
       </Container>
     </PokeBall>
-  
-  );
-}
+    );
+  }
 }
 
 export default App;
